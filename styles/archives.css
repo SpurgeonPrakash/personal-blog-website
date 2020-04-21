@@ -1,0 +1,17 @@
+.archives {
+  margin-right: 40px;
+  padding: 10px;
+}
+
+.archives > a {
+  display: flex;
+  line-height: 2rem;
+}
+
+.archives > a:hover {
+  opacity: 0.5;
+}
+
+.archives > h2 {
+  display: flex;
+}

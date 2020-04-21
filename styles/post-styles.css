@@ -1,5 +1,64 @@
+@import "header.css";
+@import "footer.css";
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30% 40%;
+  grid-template-rows: 200px 100px 600px 150px;
+  grid-template-areas:
+    "hd hd hd"
+    "title title title"
+    "main main sd"
+    "ft ft ft";
+  grid-gap: 10px;
+  font-family: "Manrope", sans-serif;
+}
+
+h1.title {
+  grid-area: title;
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.back {
+  grid-area: title;
+  margin-left: 40px;
+}
+
+.post {
+  grid-area: main;
+  margin-left: 40px;
+  margin-right: 40px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
 .post-img {
   width: 250px;
+}
+
+figure {
+  width: 250px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: left;
+}
+
+figcaption {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.author {
+  grid-area: sd;
+  margin-right: 40px;
+  background-color: #fcf7bb;
+  padding: 5px 10px 5px 20px;
+  border-radius: 10px;
+  max-height: 375px;
+  text-align: center;
 }
 
 .avatar {
@@ -10,4 +69,8 @@
 .link-img {
   width: 30px;
   height: 30px;
+}
+
+.link-img:hover {
+  opacity: 0.5;
 }

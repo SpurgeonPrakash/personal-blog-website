@@ -1,3 +1,30 @@
+@import "header.css";
+@import "footer.css";
+@import "archives.css";
+@import "about.css";
+
+body {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 30% 40%;
+  grid-template-rows: 200px 800px 150px;
+  grid-template-areas:
+    "hd hd hd"
+    "main main sd"
+    "ft ft ft";
+  grid-gap: 10px;
+  font-family: "Manrope", sans-serif;
+}
+
+.main-container {
+  grid-area: main;
+  margin-left: 40px;
+}
+
+.side-bar {
+  grid-area: sd;
+}
+
 .avatar {
   width: 50px;
   height: 50px;

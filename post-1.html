@@ -6,11 +6,18 @@
     <title>Personal Blog</title>
     <link rel="stylesheet" href="./styles/post-styles.css" />
     <meta name="description" content="A blog about bread" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Manrope:200,400,700|Merriweather:400,700,900|Montserrat:100,400,700,900|Roboto+Mono:100,400,700|Roboto:100,100i,400,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <a class="back" href="index.html">Back to the blog</a>
-    <h1>Sourdough bread</h1>
+    <header>
+      <h1>BREAD</h1>
+    </header>
+    <h1 class="title">Sourdough bread</h1>
     <div class="post">
       <p>
         Sourdough bread is made by the fermentation of dough using naturally
@@ -18,11 +25,14 @@
         and better inherent keeping qualities than breads made with baker's
         yeast, due to the lactic acid produced by the lactobacilli.
       </p>
-      <img
-        class="post-img"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sourdough_miche_%26_boule.jpg/1024px-Sourdough_miche_%26_boule.jpg"
-        alt="sourdough breads"
-      />
+      <figure>
+        <img
+          class="post-img"
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Sourdough_miche_%26_boule.jpg/1024px-Sourdough_miche_%26_boule.jpg"
+          alt="Sourdough breads"
+        />
+        <figcaption>Sourdough breads</figcaption>
+      </figure>
       <p>
         The starter is mixed with flour and water to make a final dough of the
         desired consistency. The starter weight is usually 13% to 25% of the
@@ -57,7 +67,7 @@
         alt="Bob's avatar image"
       />
       <p class="name">Bob Baker</p>
-      <p class="title">home baker</p>
+      <em class="job-title">home baker</em>
       <p class="school-company">Best Company Ltd</p>
       <p class="bio">
         I'm a homebaker, who started baking bread two years ago for fun.
