@@ -1,16 +1,18 @@
 @import "header.css";
 @import "footer.css";
 
+/* Small Screens */
 body {
   margin: 0;
   display: grid;
-  grid-template-columns: 30% 40%;
-  grid-template-rows: 200px 100px 600px 150px;
+  grid-template-columns: 100%;
+  grid-template-rows: 10% 6% 50% 24% 11%;
   grid-template-areas:
-    "hd hd hd"
-    "title title title"
-    "main main sd"
-    "ft ft ft";
+    "hd"
+    "title"
+    "main"
+    "sd"
+    "ft";
   grid-gap: 10px;
   font-family: "Manrope", sans-serif;
 }
@@ -35,19 +37,18 @@ h1.title {
 
 .post {
   grid-area: main;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: auto 40px;
   line-height: 1.5rem;
   text-align: justify;
 }
 
 .post-img {
-  width: 250px;
+  width: 200px;
 }
 
 figure {
-  width: 250px;
-  background-color: white;
+  width: 200px;
+  background-color: #fff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   float: left;
 }
@@ -59,27 +60,88 @@ figcaption {
 
 .author {
   grid-area: sd;
-  margin-right: 40px;
+  margin: auto 40px;
   background-color: #fcf7bb;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 20px;
   border-radius: 10px;
-  max-height: 375px;
   text-align: center;
+  line-height: 1rem;
 }
 
 .avatar {
   width: 50px;
   height: 50px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.link-img {
+.author-link-img {
+  opacity: 0.7;
   width: 30px;
   height: 30px;
+  margin: auto 10px;
 }
 
-.link-img:hover {
+.author-link-img:hover {
   opacity: 0.5;
+}
+
+/* Medium Screens */
+@media (min-width: 600px) and (max-width: 900px) {
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 10% 6% 69% 15%;
+    grid-template-areas:
+      "hd hd"
+      "title title"
+      "main sd"
+      "ft ft";
+    grid-gap: 10px;
+    font-family: "Manrope", sans-serif;
+  }
+
+  .post {
+    margin-top: 30px;
+  }
+
+  .author {
+    margin-top: 30px;
+  }
+
+  .author-link-img {
+    margin: auto 1px;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 900px) {
+  body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 64% 36%;
+    grid-template-rows: 18% 9% 57% 18%;
+    grid-template-areas:
+      "hd hd"
+      "title title"
+      "main sd"
+      "ft ft";
+    grid-gap: 10px;
+    font-family: "Manrope", sans-serif;
+  }
+
+  .post {
+    margin-top: 30px;
+  }
+
+  .author {
+    margin-top: 30px;
+    max-height: 380px;
+  }
+
+  .author-link-img {
+    margin: auto 2px;
+  }
 }

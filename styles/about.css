@@ -1,6 +1,21 @@
+button {
+  background-color: #f6d186;
+  font-size: 16px;
+  padding: 16px 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+button:hover {
+  background-color: #9c7526;
+  color: #fff;
+}
+
 .about {
-  margin-right: 40px;
+  margin: 20px 40px 0 40px;
   background-color: #fcf7bb;
-  padding: 5px 10px 5px 10px;
+  padding: 5px 10px;
   border-radius: 10px;
 }
